@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>All Skincare Products | Rodan + Fields®</title>
+        <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAY1BMVEX///9WVlpRUVXPzs75+fl3d3ri4uN9fYBDQ0hMTFCJiYvJycpQUFRwcHOSkpRHR0y5ubpcXGDc3N3U1NWampxiYmZra27u7u6hoaKysrSDg4asrK7x8fJ5eXu8vL7n5+c4OD7xJQtnAAADZUlEQVR4nO3dYV+iMACA8TGhWg6IUkg89b7/pzyzuws2kIF1t63n/1YFn1/pBkwVq8gJAAAAAAAAAAAAAAAAAAAAAAAAAAC+sbR+iMnPvRWYySQiakdg2AgM3XcMzLWMSGkHFllM8qM90sfF6gMAAAAAAAAAAAAAwBf79nG+YrNfN7Ouh8+4gr5Z8ITeta8DmyvUgtUaWqtS5fsfzn2n/HCWDT0BS714YYu6HwrUSxfdSKWtVSlj7h4uT+DR5b754qVJ8nMDz8rWNbC8PIHgAhO1iTwwUevIA+Uh8sBEP0ceaC9g9DrwPMJNMPfu9qRvCJwzPE8GysfNhKLdqv7+s68NrOcspiymAvXd9P7TYz+w/tJAvbp1NWU/0OkdY6f/YeCLy0OuWRDYbCMPFN2F7FEGHmIPvCfQRGAHgfMQOIBAS2CBsQ/0aZ3EHfgS8GTb4XDpPNeWswNPiwOPdyNOLtsS5gHvbj1l36reAanMP7aVjj5qdzlKlofRO3T+dfoHvFoNK50OtM3A0c11GOcsZOfcb5OMPej3TuTY7Q+d86tu52QGz79MB86nO9cbmuoztuJZoOq8C8QYKOvOJaYYA3sfe44wUGfdE1nxvcnobdPdVnp8GrG/7EXmY7c/dV7J/gRK1bpe41080P+3QKlVkrldOnvz+dcmBk/TTwf2B3prT39vrvLi6DKtuz2w2g6rXC8uX5mLpplxGeKw+IsGlk+23Q7grrh2NJG2RmG1dHfeHE0YAWlhFCb2l2E48TVQpJt+YW9EnsHbQCHMQtUueSF6HChezb9h3dh3muJzoNgZhVKuZu/F60BxNAoT9yVcf/gdKNbmbEcPXQy/xvNAsTILVea+0vCN74HiJTGmbXo7Z6bmf6B4NguldJ9qhxAoTltz6l3OGPMDCBRNbb0Q3cf8EAJFk1tvprXr6eUgAt++JtAolJXj/sMIFOnBKtRPTnsJJFCI1pzUJKXTouZgAsWmNAtV7vBWE06geLUKZTU95gcUKPZ2YTI55vsSqFzOueztVb/K+nprw3ugnh+obg9Mqg+J23rRyiKL6y/EO33ZvNNBSNbdcHJzIAAAAAAAAAAAAAAA+DdOYx/jDpO1EDnNl3yBqrcGfoc3+l9SJjAoBIbuOwbG/3Pt9zHJFn5CFQCAqPwC1B6EAfvTPPcAAAAASUVORK5CYII="
+        type="image/x-icon">
+        <script src="https://kit.fontawesome.com/55beaada1a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #fff;
+            }
+            #top{
+                height: 300px;
+            }
+            #consultant{
+        width: 15%;
+        background-color: rgb(255, 255, 255);
+       margin-top:5px;
+       margin-left: 2%;
+       
+    }
+    
+    #logo{
+    width: 15%;
+    height:120px;
+    padding:5px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 42.5%;
+    margin-top: -7.25%;
+      
+    }
+    #search{
+        width: 20%;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-top: -5.25%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    h5{
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing: 5px;
+        font-size: small;
+        color:#222222;
+    }
+    #line{
+        width: auto;
+        padding: 0.5px;
+        height: auto;
+        background-color: black;
+        
+    }
+    .nav_bar{
+        width: 70%;
+        padding: 1px;
+        height: auto;
+        background-color: rgb(252, 252, 252);
+        display: flex;
+        justify-content: space-around;
+        margin-left: 15%;
+        margin-right: -15%;
+        margin-top:-0.99%;
+        margin-bottom: 10px;
+    }
+            #container{
+                height: 95%;
+                width:90%;
+              padding:5px;
+                margin: auto;
+                display:flex;
+                justify-content: space-between;
+            }
+            #filter{
+                margin-left:10px; 
+            }
+            #content{
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #content>div{
+                height:450px;
+                width:300px;
+                margin-left: 20px;
+                padding:10px;
+            }
+            #headf{
+        border-bottom: 1px solid grey;
+        margin-left: 20px;
+      }
+        
+        select{
+            border:none;
+        }
+
+        .multiselect {
+  width: 300px;
+  padding: 5px;
+}
+
+.selectBox {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom:0px;
+
+}
+
+#checkboxes {
+  display: none;
+}
+
+#checkboxes label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#checkboxes2 {
+  display: none;
+}
+
+#checkboxes2 label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#checkboxes3 {
+  display: none;
+}
+
+#checkboxes3 label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#checkboxes4 {
+  display: none;
+}
+
+#checkboxes4 label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+            #showNum{
+                height: 30px;
+                grid-area: n;
+                margin-left: 900px;
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #seeMore{
+                grid-area: s;
+                height: 50px;
+                margin-left: 900px;
+            }
+            #content>divimg{
+                width:300px;
+                height: 200px;
+            }
+            h3{
+                font-size:16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #222222;
+            }
+            p{
+                font-size:14px;
+                font-family: Arial, Helvetica, sans-serif; 
+            }
+            h4{
+                color: #7C7F88;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+            img{
+              width:90%;
+              height:200px;
+            }
+            button{
+                width: 99%;
+                height:40px;
+                color: #222222;
+                font-size: 16px;
+                background-color: #fff;
+                border-radius: 3px;
+                margin-bottom: 5px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            button:active{
+              box-shadow: rgba(3, 120, 141, 0.25) 0px 54px 55px, rgba(3, 120, 141, 0.25) 0px -12px 30px, rgba(3, 120, 141, 0.25) 0px 4px 6px, rgba(3, 120, 141, 0.25) 0px 12px 13px, rgba(3, 120, 141, 0.25) 0px -3px 5px;
+                border: 2px solid black;
+            }
+            #seeMore>button{
+                width: 100px;
+                height: 32px;
+                color: #222222;
+                background-color: #fff;
+                font-size: 12px;
+                border-radius: 4px;
+                box-shadow: none;
+            }
+            #seeMore>button:active{
+                box-shadow: rgb(64, 64, 100) 0px 3px 8px;
+            }
+            /* #bottom{
+                width: 99%;
+                border:1px solid teal;
+                height: 300px;
+                margin-left:20px;
+            } */
+            #all{
+                height:400px ;
+                width:99%;
+                /* border:1px solid greenyellow; */
+            }
+            #basemain{
+                display: flex;
+                /* border:1px solid blue; */
+                height:313px;
+            }
+            #base{
+                display:flex;
+                width:600px;
+                height:310px;
+                justify-content: space-between;
+                /* border:1px solid red; */
+            }
+            #end_1{
+        width:300px;
+        height:310px;
+        margin-left:30px;
+        margin-top:5px;
+    }
+    #end_2{
+        width:300px;
+        height: 350px;
+        margin-left:30px;
+        margin-top:5px;
+        /* border:1px solid 
+        /* border:1px solidgoldenrod; */
+       
+    }
+    h5{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+    #social_media{
+        width: 600px;
+        height: 150px;
+        margin-right:10px;
+        margin-top:10px;
+        margin-left:400px;
+    }
+    #social_symbols{
+        height:40px;
+        margin-top:3px;
+        display: flex;
+    }
+    #social_symbols>i{
+        height:150px;
+        margin-right:40px;
+    }
+    #line{
+        padding: 1px;
+        background-color:gray;
+        margin-top:5px;   
+    }
+    #endall{
+        display:flex;
+        color: grey;
+        margin-top: 8px;
+    }
+    #endall>div{
+        margin-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin-right:18px;
+        border-right: 1px solid grey;
+        padding-right: 15px;
+    }
+    #GFG {
+            text-decoration: none;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="consultant">
+                <h5>
+                    FIND A CONSULTANT
+                </h5>
+        
+            </div>
+            <div >
+              <a id="GFG" href="home.html"> 
+              <h2 style="margin-left : 40%; color: black;">RODAN+FIELDS</h2>
+              </a>
+            </div> 
+            <div id="search">
+                        <h5>Search
+                            <i class="fas fa-search"></i>
+                        </h5>
+                        <a id="GFG" href="file:///C:/Users/91935/OneDrive/Documents/GitHub/web-15-project/login.html" style="margin: 0px ; margin-top: 20px;" > Login
+                          <i class="fas fa-user"></i>
+                      </a>
+                      <h5><a id="GFG" href="Bag.html">Bag
+                        <i  class="fas fa-shopping-bag"></i></h5>
+                    </a>
+                    <h5>
+                        <h5>
+                           
+                            English
+                        </h5>
+            </div> 
+            <div id="line"></div>
+            <br>
+        
+               <div class="nav_bar"> 
+                    <h5 style="color: rgb(0, 0, 0);" onclick="shopallproducts1.html">SHOP</h5>
+                    <h5 style="color: rgb(0, 0, 0);" onclick="bestSellers.html">BEST SELLERS</h5>
+                   <h5 style="color: rgb(0, 0, 0);">FEATURED</h5>
+                   <h5 style="color: rgb(0, 0, 0);">OUR STORY</h5>
+                   <h5 style="color: rgb(0, 0, 0);">PERKS PROGRAM</h5>
+                   <h5 style="color: rgb(0, 0, 0);">BECOME A CONSULTANT</h5>
+                   <h5 style="color: rgb(0, 0, 0);">BLOG</h5>
+               </div>
+        </div>
+        <div id="container">
+            <div id="#filter">
+                <div id="headf">
+                  <p>Filter By</p>
+                </div>
+                <div>
+                           <form>
+                               <div class="multiselect">
+                                 <div class="selectBox" onclick="showCheckboxes()">
+                                   <select>
+                                     <option>CATEGORY</option>
+                                   </select>
+                                   <div class="overSelect"></div>
+                                 </div>
+                                 <div id="checkboxes">
+                                   <label for="one">
+                                     <input type="checkbox" id="one" />Regimens</label>
+                                   <label for="two">
+                                     <input type="checkbox" id="two" />Face Serums</label>
+                                   <label for="three">
+                                     <input type="checkbox" id="three" />Eyes</label>
+                                     <label for="four">
+                                       <input type="checkbox" id="four" />Face Masks</label>
+                                       <label for="five">
+                                           <input type="checkbox" id="five" />Hand & Body</label>
+                                           <label for="six">
+                                               <input type="checkbox" id="six" />Sun Protection</label>
+                                               <label for="seven">
+                                                   <input type="checkbox" id="seven" />Pro Skincare Tools</label>
+                                                   <label for="eight">
+                                                       <input type="checkbox" id="eight" />Accessories</label>
+                                                       <label for="nine">
+                                                           <input type="checkbox" id="nine" />Special Offers</label>
+                                                           <hr>
+                                 </div>
+                               </div>
+                               
+                             </form>
+                </div>
+                <div>
+                 <form>
+                   <div class="multiselect">
+                     <div class="selectBox" onclick="showCheckboxes2()">
+                       <select>
+                         <option>SKIN CONCERN</option>
+                       </select>
+                       <div class="overSelect"></div>
+                     </div>
+                     <div id="checkboxes2">
+                       <label for="one">
+                         <input type="checkbox" id="one" />Fine Lines & Wrinkles</label>
+                       <label for="two">
+                         <input type="checkbox" id="two" />Lifting & Ferming</label>
+                       <label for="three">
+                         <input type="checkbox" id="three" />Dull & Tired Skin</label>
+                         <label for="four">
+                           <input type="checkbox" id="four" />Acne & Breakouts</label>
+                           <label for="five">
+                               <input type="checkbox" id="five" />Uneven Tone & Dark Marks </label>
+                               <label for="six">
+                                   <input type="checkbox" id="six" />Sensitivity & Visible Redness</label>
+                                   <label for="seven">
+                                       <input type="checkbox" id="seven" />Pores & Blackheads</label>
+                                       <label for="eight">
+                                           <input type="checkbox" id="eight" />Dry Skin</label>
+                                          
+                                               <hr>
+                     </div>
+                   </div>
+                   
+                 </form>
+                </div>
+                <div>
+                 <form>
+                   <div class="multiselect">
+                     <div class="selectBox" onclick="showCheckboxes3()">
+                       <select>
+                         <option>APPLICATION AREA</option>
+                       </select>
+                       <div class="overSelect"></div>
+                     </div>
+                     <div id="checkboxes3">
+                       <label for="one">
+                         <input type="checkbox" id="one" />Face</label>
+                       <label for="two">
+                         <input type="checkbox" id="two" />Eyes</label>
+                       <label for="three">
+                         <input type="checkbox" id="three" />Body</label>
+                         <label for="four">
+                           <input type="checkbox" id="four" />Hands</label>
+                           <label for="five">
+                               <input type="checkbox" id="five" />Lips</label>
+                               
+                                               <hr>
+                     </div>
+                   </div>
+                   
+                 </form>
+                </div>
+                <div>
+                 <form>
+                   <div class="multiselect">
+                     <div class="selectBox" onclick="showCheckboxes4()">
+                       <select>
+                         <option>PRODUCT LINE</option>
+                       </select>
+                       <div class="overSelect"></div>
+                     </div>
+                     <div id="checkboxes4">
+                       <label for="one">
+                         <input type="checkbox" id="one" />Redefine</label>
+                       <label for="two">
+                         <input type="checkbox" id="two" />
+                       Reverse</label>
+                       <label for="three">
+                         <input type="checkbox" id="three" />Unblemish</label>
+                         <label for="four">
+                           <input type="checkbox" id="four" />Soothe</label>
+                           <label for="five">
+                               <input type="checkbox" id="five" />Sportless </label>
+                               <label for="six">
+                                   <input type="checkbox" id="six" />Recharge</label>
+                                   <label for="seven">
+                                       <input type="checkbox" id="seven" />
+                                   Dermacosmetics</label>
+                                       <label for="eight">
+                                           <input type="checkbox" id="eight" />Essentials</label>
+                                          
+                                               <hr>
+                     </div>
+                   </div>
+                   
+                 </form>
+                </div>
+              </div>
+            <div id="content"></div>
+            </div>
+            <div>
+            <div id="showNum"><p>Showing 24 of 82</p></div>
+            <div id="seeMore"><button onclick="window.location.href='shopallproducts2.html'">SEE MORE</button></div>   
+        </div>
+        <hr>
+        </div>
+        <div id="all">
+          <div id="basemain">
+          <div id="base">
+          <div id="end_1">
+      
+              <h5>ABOUT R+F</h5>
+              <h5>PRESS ROOM</h5>
+              <h5>COMPANY INFO</h5>
+              <h5>EXECUTIVE TEAM</h5>
+              <h5>CAREERS</h5>
+              <h5>R + F RECYLING PROGRAM</h5>
+              <h5>BLOG</h5>
+              </div>
+              
+              
+              <div id="end_2">
+                  
+                  <h5>HELP</h5>
+                  <h5>PRODUCT & HELP CENTER</h5>
+                  <h5>SHIPPING</h5>
+                  <h5>SATISFACTION GURANTEE</h5>
+                  <h5>PROMOTIONAL TERMS & CONDITIONS</h5>
+                  <h5>R + F FACTS</h5>
+                  <h5>KLARNA</h5>
+                  <h5>SITE MAP</h5>
+                  </div>
+                  </div>
+                       
+                  
+              <div id="social_media">
+              <div>
+              <h2>Let's Get Social</h2></div>
+              
+              <a href="https://www.facebook.com/rodanandfields"  style="margin: 0;">  <i class="fab fa-facebook-f"></i>
+              </a>
+            
+              <a href="https://twitter.com/RodanFieldsHQ" style="margin: 0; margin-left: 40px;">
+            <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/rodanandfields/" style="margin: 0; margin-left: 40px;">
+            <i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/RodanFields" style="margin: 0; margin-left: 40px;">
+            <i class="fab fa-youtube"></i></a>
+            <a href="https://www.pinterest.com/RodanandFields/" style="margin: 0; margin-left: 40px;">
+
+            <i class="fab fa-pinterest-p"></i>
+            </a>
+          </div>
+              </div>
+              </div>
+              <div id="line"></div>
+              <div id="endall">
+                  <div style="border-right: none;">© 2022 Rodan & Fields</div> <div> Privacy Policy</div>
+  <div>Terms & Conditions</div>
+  <div>Accessibility</div>
+  <div>California Supply Chains Act</div>
+  <div>DSA Code Of Ethics</div>
+  <div>Disclaimer</div>
+  <div>Preference Center</div>
+              </div>
+          </div>
+         </div>
+    </body>
+</html>
+<script>
+  var bagarr= JSON.parse(localStorage.getItem("Bagitems"))||[];
+    var pro=JSON.parse(localStorage.getItem("pro"))
+    var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+var expanded2 = false;
+function showCheckboxes2() {
+  var checkboxes = document.getElementById("checkboxes2");
+  if (!expanded2) {
+    checkboxes.style.display = "block";
+    expanded2 = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded2 = false;
+  }
+}
+var expanded3 = false;
+function showCheckboxes3() {
+  var checkboxes = document.getElementById("checkboxes3");
+  if (!expanded3) {
+    checkboxes.style.display = "block";
+    expanded3 = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded3 = false;
+  }
+}
+var expanded4 = false;
+function showCheckboxes4() {
+  var checkboxes = document.getElementById("checkboxes4");
+  if (!expanded4) {
+    checkboxes.style.display = "block";
+    expanded4 = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded4 = false;
+  }
+}
+    pro.map(function(pro){
+        var divmain=document.createElement("div");
+        var divimg=document.createElement("div");
+        var img=document.createElement("img");
+        var achievement=document.createElement("div");
+        var head=document.createElement("div");
+        var discrip=document.createElement("div");
+        var price=document.createElement("div");
+        var ratings=document.createElement("div");
+        var addtobag=document.createElement("div");
+        img.setAttribute("src",pro.img_url);
+        achievement.innerHTML="<h4>Best Seller</h4>";
+        head.innerHTML=pro.name;
+        head.style.height="30px";
+        discrip.innerHTML=pro.discription;
+        discrip.style.height="60px";
+        price.innerHTML="$"+pro.price;
+        price.style.marginTop="-10px";
+        ratings.style.display="flex";
+        ratings.style.padding="5px";
+        var star=document.createElement("div");
+        star.textContent= "★★★★★";
+        star.style.marginRight="8px";
+        var ratnum=document.createElement("div");
+        ratnum.innerHTML=pro.rate;
+        ratnum.style.marginTop="4px";
+        ratnum.style.marginRight="10px";
+        var code=document.createElement("div");
+        code.innerHTML=pro.code;
+        code.style.marginTop="-11px";
+        ratings.append(star,ratnum,code);
+        var add_button=document.createElement("button");
+        add_button.textContent="ADD TO BAG";
+        add_button.addEventListener("click",function(){
+           addToBag(pro)
+        })
+        addtobag.append(add_button);
+        divimg.append(img);
+        divmain.append(divimg,achievement,head,discrip,price,ratings,addtobag);
+        document.querySelector("#content").append(divmain);
+        // document.querySelector("#container").append(content);
+
+    })
+    function addToBag(data){
+    console.log(data)
+   bagarr.push(data)
+   localStorage.setItem("Bagitems",JSON.stringify(bagarr));
+   alert("Item is added successfuly to Bag")
+}
+</script>

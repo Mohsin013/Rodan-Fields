@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+		Rodan + Fields® | BestSellers</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAY1BMVEX///9WVlpRUVXPzs75+fl3d3ri4uN9fYBDQ0hMTFCJiYvJycpQUFRwcHOSkpRHR0y5ubpcXGDc3N3U1NWampxiYmZra27u7u6hoaKysrSDg4asrK7x8fJ5eXu8vL7n5+c4OD7xJQtnAAADZUlEQVR4nO3dYV+iMACA8TGhWg6IUkg89b7/pzyzuws2kIF1t63n/1YFn1/pBkwVq8gJAAAAAAAAAAAAAAAAAAAAAAAAAAC+sbR+iMnPvRWYySQiakdg2AgM3XcMzLWMSGkHFllM8qM90sfF6gMAAAAAAAAAAAAAwBf79nG+YrNfN7Ouh8+4gr5Z8ITeta8DmyvUgtUaWqtS5fsfzn2n/HCWDT0BS714YYu6HwrUSxfdSKWtVSlj7h4uT+DR5b754qVJ8nMDz8rWNbC8PIHgAhO1iTwwUevIA+Uh8sBEP0ceaC9g9DrwPMJNMPfu9qRvCJwzPE8GysfNhKLdqv7+s68NrOcspiymAvXd9P7TYz+w/tJAvbp1NWU/0OkdY6f/YeCLy0OuWRDYbCMPFN2F7FEGHmIPvCfQRGAHgfMQOIBAS2CBsQ/0aZ3EHfgS8GTb4XDpPNeWswNPiwOPdyNOLtsS5gHvbj1l36reAanMP7aVjj5qdzlKlofRO3T+dfoHvFoNK50OtM3A0c11GOcsZOfcb5OMPej3TuTY7Q+d86tu52QGz79MB86nO9cbmuoztuJZoOq8C8QYKOvOJaYYA3sfe44wUGfdE1nxvcnobdPdVnp8GrG/7EXmY7c/dV7J/gRK1bpe41080P+3QKlVkrldOnvz+dcmBk/TTwf2B3prT39vrvLi6DKtuz2w2g6rXC8uX5mLpplxGeKw+IsGlk+23Q7grrh2NJG2RmG1dHfeHE0YAWlhFCb2l2E48TVQpJt+YW9EnsHbQCHMQtUueSF6HChezb9h3dh3muJzoNgZhVKuZu/F60BxNAoT9yVcf/gdKNbmbEcPXQy/xvNAsTILVea+0vCN74HiJTGmbXo7Z6bmf6B4NguldJ9qhxAoTltz6l3OGPMDCBRNbb0Q3cf8EAJFk1tvprXr6eUgAt++JtAolJXj/sMIFOnBKtRPTnsJJFCI1pzUJKXTouZgAsWmNAtV7vBWE06geLUKZTU95gcUKPZ2YTI55vsSqFzOueztVb/K+nprw3ugnh+obg9Mqg+J23rRyiKL6y/EO33ZvNNBSNbdcHJzIAAAAAAAAAAAAAAA+DdOYx/jDpO1EDnNl3yBqrcGfoc3+l9SJjAoBIbuOwbG/3Pt9zHJFn5CFQCAqPwC1B6EAfvTPPcAAAAASUVORK5CYII="
+    type="image/x-icon">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lESBWooxcAbhndepcVmWVE9vAEwm2dEebhKUZWBCMRHxzzs6InOfkausgjIdbVCCM66SFqMb7G6KaujDD5Il4JHauTochjnJghpk_ZaiwHaxn_T_kADl-Oi42jExML1ENJGHalQfW5ZZ1Y3tY2qZ8d1VHn6Xheu_SwoTJRvQaVFxoZ9341UiWu4GfFVWQV-xSJl2TuEMTHLm_sTphhhIBOAGcnZ9cXt3AKq21e96xHZuUlk0qzotuAXg9S_19atfTpSSShTrSabzQyRbW7BK6Kf35WY6jRgaSl4BEuxa5Mn9yqPj1ZUB1gLxOH3sHSj6qg3kfWQ9OA7Wc_QOBCZUle-4CZyQbedZFLBp1vqY-Gyy5f3n5_-7aA7niB1U_RADr1qm1Muif475NNnM-W3hDju68E-JQstsVGS19HHGG6t2RX_o6BDsvoet_CYjSx9-PKT0nlRIb9em7GnyKN9V6xByWWo47nHqTbpNjHhqC4RZfc0RK8xEStBiYcd6W5uqLu2BCdLkFpSilkdcOQNprhSnLeq9J7ZJbCdjYUlRuYq-99qMPgZH32nh_q3szenB0lHv3UK9baskxlR33nhosu7tiZb2REmZbA8fyfTv12oJmAARw5hub7llJeCqNklTeVQGOYHVRt0s7hL9LlYtgY-UqxYfWX2HLYu-3O07b2Sy3fKASQCvZPEPlEwpG6w8FeVcF9YIp7QVIfTFBee78WLBVzKntLmrKPBgeJxgRKqB-a1A-pQlaTXxSPlHUL9-CuymRbuENHGasRiptXCF4fCOUh45mV-pkFeIpNbGxV1BNHr_0XAoy5swwxwMP_GhdVIDj3Da0d2xM-Y1GgabKPR1-ZTSi9_i2ipREt124hTPNuGYELXEsXtgX9TSq4Eiq-UNYAEDV5iqfU8edB8WRVEHngrlALGT13ecJLBB3fu6CtrABo7DeDt7xbHy7zxb3Oa4-OFuQSukZV1QW9H8RN3QyAGMF2YGJDFT2tpbwFeLEWh6oXnTtzDmNnKKax1bcC1Lvw34fCpT9_RffCJeC_L9U8jtk5swZL29Ebf1EbI_fwwqiHJUkiQjTs-l1i6QXxUhSmfu6dFV1Pcr519NzAxaDZYJ-QgFYCwhViRphfhSG0xLcC9jYMbmV0n-6rVpTlTmezAp0GJUMTnfxHiDjbhw_2rpVW4-qsT6f6MXUnmCsRle4yO3xeuSkTn-5o8hNkY2kb2jI4KuC3PF-Oufrw" nonce="0e0833104c18dfc7be4c7c41550796d1" charset="UTF-8"></script>
+    <script src="https://kit.fontawesome.com/55beaada1a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<style>
+   #consultant{
+        width: 15%;
+        background-color: rgb(255, 255, 255);
+       margin-top:5px;
+       margin-left: 2%;
+       
+    }
+    
+    #logo{
+    width: 15%;
+    height:120px;
+    padding:5px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 42.5%;
+    margin-top: -7.25%;
+      
+    }
+    #search{
+        width: 20%;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-top: -5.25%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    h5{
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing: 5px;
+        font-size: small;
+
+    }
+    #line{
+        width: auto;
+        padding: 0.5px;
+        height: auto;
+        background-color: black;
+        
+    }
+    .nav_bar{
+        width: 70%;
+        padding: 1px;
+        height: auto;
+        background-color: rgb(252, 252, 252);
+        display: flex;
+        justify-content: space-around;
+        margin-left: 15%;
+        margin-right: -15%;
+        margin-top:-0.99%;
+        margin-bottom: 10px;
+    }
+    #logo>img{
+              width:90%;
+              height:200px;
+            }
+        #container{
+            width:100%;
+           
+        }
+        #head{
+            text-align: center;
+            width:55%;
+            margin:auto
+        }
+        #head>h1{
+            font-family: monospace;
+        }
+        #head>p{
+            font-size: 19px;
+            color: grey;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #subcontainer{
+            margin-top: 50px;
+            display:grid;
+            grid-template-columns: repeat(3,22%);
+            grid-template-rows: repeat(4,500px);
+            grid-gap:70px;
+            justify-content: center;
+        }
+        #subcontainer>div{
+            text-align: center;
+        }
+        .box>img{
+            width:100%;
+            height:60%
+        }
+        .box>h3{
+            margin: 0 0 20px 0;
+            font-family: sans-serif;
+            font-size: 17px;
+        }
+        .smallbox{
+        display: flex;
+        justify-content: space-around;
+        padding:0 30px 0 30px;
+    }
+    .smallbox>p{
+        font-size: 17px;
+    }
+    .p1{
+        border-right: 1px solid grey;
+        padding-right: 10px;
+    }
+    button{
+        width:80%;
+        height:50px;
+        border:1px solid black;
+        font-size:17px;
+        background-color: white;
+    }
+    #lowercon{
+        width:100%;
+        display: flex;
+        height:300px;
+    }
+    #one{
+        width:20%;
+    }
+    #two{
+        width:23%;
+    }
+    #three{
+        width:50%;
+    }
+    #all{
+                height:400px ;
+                width:99%;
+                /* border:1px solid greenyellow; */
+            }
+            #basemain{
+                display: flex;
+                /* border:1px solid blue; */
+                height:313px;
+            }
+            #base{
+                display:flex;
+                width:600px;
+                height:310px;
+                justify-content: space-between;
+                /* border:1px solid red; */
+            }
+            #end_1{
+        width:300px;
+        height:310px;
+        margin-left:30px;
+        margin-top:5px;
+    }
+    #end_2{
+        width:300px;
+        height: 350px;
+        margin-left:30px;
+        margin-top:5px;
+        /* border:1px solid 
+        /* border:1px solidgoldenrod; */
+       
+    }
+    h5{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+
+    #social_media{
+        width: 600px;
+        height: 150px;
+        margin-right:10px;
+        margin-top:10px;
+        margin-left:400px;
+    }
+    #social_symbols{
+        height:40px;
+        margin-top:3px;
+        display: flex;
+    }
+    #social_symbols>i{
+        height:150px;
+        margin-right:40px;
+    }
+    #line{
+        padding: 1px;
+        background-color:gray;
+        margin-top:5px;   
+    }
+    #endall{
+        display:flex;
+        color: grey;
+        margin-top: 8px;
+    }
+    #endall>div{
+        margin-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin-right:18px;
+        border-right: 1px solid grey;
+        padding-right: 15px;
+    }
+    #GFG {
+            text-decoration: none;
+        }
+     
+    </style>
+</head>
+<body>
+
+    <div id="container">
+         <div>
+            <div id="consultant">
+                <h5>
+                    FIND A CONSULTANT
+                </h5>
+        
+            </div>
+            <div id="logo">
+                <img style="margin-top: -5%;" src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+                alt="logo">
+            </div> 
+            <div id="search">
+                        <h5>Search
+                            <i class="fas fa-search"></i>
+                        </h5>
+                        <a id="GFG" href="login.html" style="margin: 0px ; margin-top: 20px; color: grey;" > Login
+                            <i class="fas fa-user"></i>
+                        </a>
+                           
+                        
+                        <h5><a id="GFG" href="Bag.html" style="color: grey;">Bag
+                            <i  class="fas fa-shopping-bag"></i></h5>
+                        </a>
+                        <h5>
+                        
+                            English
+                        </h5>
+            </div> 
+            <div id="line"></div>
+            <br>
+        
+            <div class="nav_bar"> 
+                <h5 style="color: rgb(0, 0, 0);" onclick="shopallproducts1.html">SHOP</h5>
+                <h5 style="color: rgb(0, 0, 0);" onclick="bestSellers.html">BEST SELLERS</h5>
+                <h5 style="color: rgb(0, 0, 0);">FEATURED</h5>
+                <h5 style="color: rgb(0, 0, 0);">OUR STORY</h5>
+                <h5 style="color: rgb(0, 0, 0);">PERKS PROGRAM</h5>
+                <h5 style="color: rgb(0, 0, 0);">BECOME A CONSULTANT</h5>
+                <h5 style="color: rgb(0, 0, 0);">BLOG</h5>
+            </div>
+        </div>
+        <div id="head">
+            <h1>BEST SELLERS</h1>
+            <p>Shop our fan favorites. We've got a full range of skincare products including cleansers, creams, serums + more. All created with dermatology-inspired formulas to address your skin concerns. Experience the transformative results + get the best skin of your life.</p>
+        </div>
+        <div id="subcontainer"></div>
+        <hr>
+        <div id="all">
+            <div id="basemain">
+                <div id="base">
+                <div id="end_1">
+            
+                    <h5>ABOUT R+F</h5>
+                    <h5>PRESS ROOM</h5>
+                    <h5>COMPANY INFO</h5>
+                    <h5>EXECUTIVE TEAM</h5>
+                    <h5>CAREERS</h5>
+                    <h5>R + F RECYLING PROGRAM</h5>
+                    <h5>BLOG</h5>
+                </div>
+                
+                
+                <div id="end_2">
+                    
+                    <h5>HELP</h5>
+                    <h5>PRODUCT & HELP CENTER</h5>
+                    <h5>SHIPPING</h5>
+                    <h5>SATISFACTION GURANTEE</h5>
+                    <h5>PROMOTIONAL TERMS & CONDITIONS</h5>
+                    <h5>R + F FACTS</h5>
+                    <h5>KLARNA</h5>
+                    <h5>SITE MAP</h5>
+                </div>
+            </div>
+                         
+                    
+            <div id="social_media">
+                <div><h2>Let's Get Social</h2></div>
+                <div id="social_symbols">
+                    
+                
+                    <a href="https://www.facebook.com/rodanandfields"  style="margin: 0;">  <i class="fab fa-facebook-f"></i>
+                    </a>
+                  
+                    <a href="https://twitter.com/RodanFieldsHQ" style="margin: 0; margin-left: 40px;">
+                  <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rodanandfields/" style="margin: 0; margin-left: 40px;">
+                  <i class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/user/RodanFields" style="margin: 0; margin-left: 40px;">
+                  <i class="fab fa-youtube"></i></a>
+                  <a href="https://www.pinterest.com/RodanandFields/" style="margin: 0; margin-left: 40px;">
+
+                  <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div id="line"></div>
+        <div id="endall">
+            <div style="border-right: none;">© 2022 Rodan & Fields</div> <div> Privacy Policy</div>
+            <div>Terms & Conditions</div>
+            <div>Accessibility</div>
+            <div>California Supply Chains Act</div>
+            <div>DSA Code Of Ethics</div>
+            <div>Disclaimer</div>
+            <div>Preference Center</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  var bestdata=[
+  {img:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+  name:"REDEFINE Regimen",
+  price:"220.00",
+  perks:" $197.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
+  name:"Total RF Serum",
+  price:"175.00",
+  perks:" $157.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ENHLSH01-cat.jpg?context=bWFzdGVyfGltYWdlc3wxMTM0NXxpbWFnZS9qcGVnfGltYWdlcy9oM2EvaDExLzg4MjE4NDQ1NzQyMzguanBnfDJhZTNkODRiNDQ0YjQwZjY3MGQwMTVmNWEwMzFkYmEzMzMxNTBjMDc0MDRjNGM4NWYwYzVkNTg2NzY0MjQyZGI",
+  name:"R + F Lash Boost",
+  price:"155.00",
+  perks:" $139.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+  name:"Active Hydration Bright Eye Complex",
+  price:"72.00 ",
+  perks:"$64.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTcwMHxpbWFnZS9qcGVnfGltYWdlcy9oOGIvaGI0LzEzNTMzMTcxNTE1NDIyLmpwZ3wyZjgzMWEzNzJhNjRjZmZmNTU3NTBjODE0NjcxYjgzY2Q2Y2MxMzgyNzk3ZjcxOTU3OGUyYTVlNzE5MjI4OTI5",
+  name:"Active Hydration Serum",
+  price:"112.00",
+  perks:" $100.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+  name:"REDEFINE Multi-Function Eye Cream",
+  price:"70.00 ",
+  perks:"$63.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+  name:"Rodan + Fields Active Hydration Body Replenish",
+  price:"66.00 ",
+  perks:"$59.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ENPS125-720x600-desktop-1-.jpg?context=bWFzdGVyfGltYWdlc3wxNTA5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjAvaGM0LzEzNTMzMTc3NTc3NTAyLmpwZ3xlNTFkYzhjOTA0ZjA2ZWUyNzhiNDljYTJiNGQ0MDIxY2NmZTNlNmRjYTc1YWNkOGNmMDg2N2RkYmYzMGQyYTc4",
+  name:"Rodan + Fields Enhancement Micro-Dermabrasion Paste",
+  price:"83.00 ",
+  perks:"$74.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+  name:"REVERSE Regimen",
+  price:"195.00",
+  perks:" $175.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+  name:"UNBLEMISH Regimen",
+  price:"190.00",
+  perks:" $171.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI",
+  name:"SOOTHE Regimen",
+  price:"185.00",
+  perks:" $166.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+  name:"RECHARGE Regimen",
+  price:"134.00",
+  perks:" $120.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/spotless-regimen-UNRS001.jpg?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGU3LzEzODE0NjU0MzA0Mjg2LmpwZ3xjNGJiOWMyMDczMDlmMzU4OWRjM2FiNjhkNjgxY2QyYzY1ZjI1NzNlY2NlNWZmMGE1NWZjNTUxMjNkOGIzY2Q3",
+  name:"SPOTLESS Regimen",
+  price:"89.00 ",
+  perks:"80.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/pore-cleansing-md-system-XTPCS01.jpg?context=bWFzdGVyfGltYWdlc3wxMjEzMXxpbWFnZS9qcGVnfGltYWdlcy9oMWQvaDU3LzEzODE0NjU0Nzk1ODA2LmpwZ3w5MTFmNzZjMzJjNTI0YmExMGZkNTUwNDQxODZlMjY5ZGUxNDdjZWRkYjZjZTRiMDRkNmMxMGNjNWQ1MThkYzcx",
+  name:"Pore Cleansing MD System",
+  price:"260.00",
+  perks:" $234.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/DERDLB1-cat.jpg?context=bWFzdGVyfGltYWdlc3wxMDkyNHxpbWFnZS9qcGVnfGltYWdlcy9oNGEvaDE4Lzg4MjE4NDQxNDgyNTQuanBnfDVmY2E4ZmM1YzdlNjQxMmI4YjgzNGY4MDIwNWVlZDc2MmNhYzVjN2FjZmQyMTFiNmU1NDc4Y2RiNGQyOWFmZjk",
+  name:"Radiant Defense Liquid Brush",
+  price:"38.00 ",
+  perks:"$34.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ESMRB01-720x600-Desktop-1-.jpg?context=bWFzdGVyfGltYWdlc3w0MTM2OHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDMxLzE0MDMyNzUyNTc0NDk0LmpwZ3w5OTBlOTQ0ZDA5MjhhMzJiZDc3NWI4MGQ4Zjc3ZGVmYmJmM2M0YmU5MDkxNTc5NmMzOTJiNjBiMzEwZDZhOTc1",
+  name:"ESSENTIALS Complete Eye Makeup Remover",
+  price:"32.00 ",
+  perks:"$28.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ESBL200-cat.jpg?context=bWFzdGVyfGltYWdlc3wyMjg3NHxpbWFnZS9qcGVnfGltYWdlcy9oZTYvaDJhLzg4MjE4NDQ4NjkxNTAuanBnfGQ2M2NlOTA4ZWU1ODZjZjkyNDQwZTNhN2VhM2FjM2E1MmZjMjI3YWEyMjkzYmRmZDQ5ZGM2OGJlMWI4MjJjYTA",
+  name:"ESSENTIALS DailyBody Moisturizer",
+  price:"27.00 ",
+  perks:"$24.00 with PC PERKS"
+  },
+  {img:"https://www.rodanandfields.com/en-us/medias/ESLS002-cat.jpg?context=bWFzdGVyfGltYWdlc3wzNjk5NHxpbWFnZS9qcGVnfGltYWdlcy9oMzUvaDRlLzg4MjE4NDQ5Njc0NTQuanBnfGQ5M2Q2OWZjNDEzM2Q4MTMwYTc5N2M3MThhYzdiODVjYTMzZjY2N2Y3MWVjYTNlZWNmNmRlMmEzMGNmNDlhY2Q",
+  name:"ESSENTIALS Lip Shield SPF 25(Two-Pack)",
+  price:"19.00 ",
+  perks:"$17.00 with PC PERKS"
+  }
+]
+var bagarr= JSON.parse(localStorage.getItem("Bagitems"))||[];
+bestdata.map(function(elem){
+      var y=document.createElement("div");
+      y.setAttribute("class","box")
+     var image=document.createElement("img")
+        image.setAttribute("src",elem.img)
+        var para=document.createElement("h3")
+        para.textContent=elem.name;
+        var para1=document.createElement("p")
+        para1.setAttribute("class","p1")
+        para1.textContent="$"+elem.price;
+        var para2=document.createElement("p")
+        para2.textContent=elem.perks;
+        var x =document.createElement("div")
+        x.setAttribute("class","smallbox")
+        var btn=document.createElement("button")
+        btn.textContent="ADD TO BAG"
+        btn.addEventListener("click",function(){
+           addToBag(elem)
+        })
+        x.append(para1,para2)
+        y.append(image,para,x,btn);
+        document.querySelector("#subcontainer").append(y)
+})
+function addToBag(data){
+    console.log(data)
+   bagarr.push(data)
+   localStorage.setItem("Bagitems",JSON.stringify(bagarr));
+   alert("Item is added successfuly to Bag")
+}
+
+</script>
