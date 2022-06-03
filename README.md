@@ -2,9 +2,9 @@
 A web application to purchase skin care products.
 
 Features:
-Local Sign-in/Sign-up
+Local Sign-in/Sign-up.
 Responsive Design.
-Functional User Interface
+Functional User Interface.
 
 Tech Stack: HTML | CSS | Javascript | Bootstrap
 
