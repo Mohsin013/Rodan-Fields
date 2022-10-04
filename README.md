@@ -18,3 +18,4 @@ Developed a responsive website for all screen sizes
 A collaborative project built by a team of 5 executed in 7 days..
 
 LIVE DEMO:  https://storied-sawine-e5f444.netlify.app/
+
