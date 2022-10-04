@@ -19,3 +19,8 @@ A collaborative project built by a team of 5 executed in 7 days..
 
 LIVE DEMO:  https://storied-sawine-e5f444.netlify.app/
 
+## Some of the screenshots are below:-
+
+![RodanFields](./Images/bag.png)
+![RodanFields](./Images/bestsellers.png)
+
